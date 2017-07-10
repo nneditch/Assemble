@@ -152,30 +152,22 @@ p {
   .navbar-default.affix .nav > li > a:focus:hover {
     color: #fdcc52;
   }
-}
-header{
-  position:relative;
-  width:100%;
-  min-height:auto;
-  overflow-y:hidden;
-  background:url(../img/bg-pattern.png),#7b4397;
-  background:url(../img/bg-pattern.png),
-  -webkit-linear-gradient(to left,#7b4397,#dc2430);
-  background:url(../img/bg-pattern.png),linear-gradient(to left,#7b4397,#dc2430);
-  color:#fff
-}
+} 
+
+
 header {
-  position: relative;
   width: 100%;
   min-height: auto;
   overflow-y: hidden;
- background:url(../img/bg-pattern.png),#2d2534;
+  background:url(../img/bg-pattern.png),#2d2534;
   color: white;
 }
+
 header .header-content {
   text-align: center;
   padding: 150px 0 50px;
   position: relative;
+  max-width: 800px;
 }
 header .header-content .header-content-inner {
   position: relative;
@@ -315,6 +307,16 @@ section.cta {
   -o-background-size: cover;
   background-position: center;
   background-image: url('../img/womensmarch.jpg');
+  padding: 130px 0;
+}
+section.cta-plain {
+  position: relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background: #f5b000;
   padding: 130px 0;
 }
 section.cta .cta-content {
