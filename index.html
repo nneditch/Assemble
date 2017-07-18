@@ -79,9 +79,17 @@
                             
                             <h1>Assemble helps you take action on the issues you care about most.</h1>
                             <h3 style="padding-bottom: 20px;">We're still building, but sign up today and be one of the first to try it out when it's ready.</h3>
+                            <form id="gform" method="POST" 
+                            action="https://script.google.com/macros/s/AKfycbw9vGLKl4FtBJFAA9_o3ORDcTlf-8_MPZbXHgYieurbzNFRS6Eo/exec"> 
+                            <input class="email" type="email" name="email" placeholder="your email address" required />
+                            <input type="submit" value="Sign up" class="btn-outline submit" onclick="submitForm();" /> 
+                            </form>
+
+                            <div class="inner" style="display: none;" id="thankyou_message"> 
+                            <p><i>Thanks for signing up! We'll be in touch soon.</i></p> 
+                            </div> 
 
 
-                            <a href="" class="btn btn-outline btn-xl page-scroll">sign up</a>
                         </div>
                     </div>
                 </div>
@@ -91,7 +99,7 @@
                             <div class="device">
                                 <div class="screen">
                                     <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                                    <img src="img/assemble.png" class="img-responsive" alt="">
+                                    <img src="img/udara.png" class="img-responsive" alt="">
                                 </div>
                                 <div class="button">
                                     <!-- You can hook the "home button" to some JavaScript events or just remove it -->
@@ -125,7 +133,7 @@
                             <div class="device">
                                 <div class="screen">
                                     <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                                    <img src="img/assemble2.png" class="img-responsive" alt=""> </div>
+                                    <img src="img/ohiointerfaith.png" class="img-responsive" alt=""> </div>
                                 <div class="button">
                                     <!-- You can hook the "home button" to some JavaScript events or just remove it -->
                                 </div>
@@ -140,7 +148,7 @@
                                 <div class="feature-item">
                                     <i class="icon-user text-primary"></i>
                                     <h3>Personalized</h3>
-                                    <p class="text-muted">Actions are curated for you based on personal interests, location, and skills.</p>
+                                    <p class="text-muted">Actions are curated for you based on personal interests, location, and skills. </p>
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -163,7 +171,7 @@
                                 <div class="feature-item">
                                     <i class="icon-lock text-primary"></i>
                                     <h3>Secure</h3>
-                                    <p class="text-muted">Rest assured that we take your personal privacy and security seriously.</p>
+                                    <p class="text-muted">We take your personal privacy and security seriously.</p>
                                 </div>
                             </div>
                         </div>
@@ -179,7 +187,7 @@
             <div class="container">
                 <h2>Are you a mission-driven organization looking to drive new support to your campaigns?</h2>
                 <h3 style="padding-bottom: 20px; color: #fff; max-width: 800px;">Partner organizations get access to new volunteers, as well as data on the issues people care about and the actions they are most likely to take.</h3>
-                <a href="" class="btn btn-outline btn-xl page-scroll">Get in touch</a>
+                <a href="mailto:rose@goassemble.us" class="btn btn-outline btn-xl page-scroll" name="rose@goassemble.us">Get in touch</a>
             </div>
         </div>
         <div class="overlay"></div>
@@ -202,6 +210,9 @@
 
     <!-- Plugin JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Form Submission Javascript -->
+    <script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
 
     <!-- Theme JavaScript -->
     <script src="js/new-age.min.js"></script>

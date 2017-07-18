@@ -78,6 +78,7 @@ p {
   font-weight: 200;
   letter-spacing: 1px;
   color: #fdcc52;
+  margin-top: -10px;
 }
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
@@ -455,6 +456,56 @@ footer ul li a.active {
 .btn-xxl {
   padding: 20px 50px;
   font-size: 18px;
+}
+input.email {
+  font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+  letter-spacing: 2px;
+  color: #fff;
+  width: 250px;
+    font-size: 16px;
+    padding: 15px;
+    border-width: 1px;
+    border-color: #FFB700;
+    border-style: solid;
+  background-color: #2d2534;
+  display: inline-block;
+  margin-right: 0px;
+}
+input.email::-webkit-input-placeholder {
+    color: #fefefe;
+    opacity: 1;
+}
+input.email::-webkit-input-placeholder:focus {
+    color: #222;
+    opacity: 1;
+}
+input.email:focus {
+  background: white;
+    transition: all 0.3s ease;
+    color: #222;
+}
+
+input.submit {
+  display: inline-block;
+  font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #333;
+  margin-left: -4px;
+    font-size: 16px;
+    padding: 15px 25px;
+
+    border-color: #FFB700;
+    border-style: solid;
+    background-color: #FFB700;
+}
+@media (max-width: 768px) {
+  input.email {
+    width: 200px;
+  }
+  input.submit {
+    padding: 15px 15px;
+  }
 }
 ::-moz-selection {
   color: white;
